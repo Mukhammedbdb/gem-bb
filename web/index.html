@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Свадебное приглашение</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Свадебное приглашение</h1>
+        <p>Дорогие друзья, мы рады пригласить вас на нашу свадьбу!</p>
+
+        <div class="wedding-info">
+            <h2>Информация о свадьбе</h2>
+            <p>Дата: 10 сентября 2024 года</p>
+            <p>Место: Загородный клуб "Романтика", Москва</p>
+        </div>
+
+        <div class="program">
+            <h2>Программа</h2>
+            <p>14:00 - Регистрация</p>
+            <p>15:00 - Праздничный ужин</p>
+            <p>18:00 - Танцы и развлечения</p>
+        </div>
+
+        <form id="rsvp-form" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Электронная почта:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+            <input type="submit" value="Отправить">
+        </form>
+        
+
+        <div class="map">
+            <h2>Как добраться</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509807!2d144.95373531590454!3d-37.8162797420216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6433d5b1b987f%3A0xfb2b1d76d1f34c0!2sFederation+Square%2C+Melbourne+VIC+3000%2C+Australia!5e0!3m2!1sen!2sau!4v1551946786046"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
